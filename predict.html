@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thyroid Disease Prediction</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: "Helvetica Neue", sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Thyroid Disease Classification</h1>
+     <form action="/submit" method="post">
+   
+        <label for="goitre">Goitre:</label>
+        <select name="goitre" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br><br>
+
+        <label for="tumor">Tumor:</label>
+        <select name="tumor" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br><br>
+
+        <label for="hypopituitary">Hypopituitary:</label>
+        <select name="hypopituitary" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br><br>
+
+        <label for="psych">Psych:</label>
+        <select name="psych" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br><br>
+
+        <label for="TSH">TSH:</label>
+        <input type="number" name="TSH" required ><br><br><br>
+
+        <label for="T3">T3:</label>
+        <input type="number" name="T3"  required ><br><br><br>
+
+        <label for="TT4">TT4:</label>
+        <input type="number" name="TT4" required  ><br><br><br>
+
+        <label for="T4U">T4U:</label>
+        <input type="number" name="T4U" required ><br><br><br>
+
+        <label for="FTI">FTI:</label>
+        <input type="number" name="FTI" required ><br><br><br>
+
+        <label for="TBG">TBG:</label>
+        <input type="number" name="TBG" required  ><br><br><br>
+
+        <input type="submit" value="Predict" style="display: inline-block; padding: 10px 20px; border: none; background-color: #007bff; color: #fff; text-align: center; text-decoration: none; font-size: 16px; cursor: pointer; border-radius: 5px;">
+                
+   
+    </form>
+</body>
+</html>
